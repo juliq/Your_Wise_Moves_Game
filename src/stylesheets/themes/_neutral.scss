@@ -1,0 +1,69 @@
+$neutral-text: rgb(239, 246, 248);
+$neutral-background: rgb(35, 57, 77);
+$neutral-border: #1A191A; 
+$neutral-text-hover: rgb(230, 233, 233);
+$neutral-background-hover: rgb(52, 55, 56);
+$neutral-border-hover: rgb(8, 6, 20);
+$neutral-gradient-center: rgb(57, 62, 87);
+
+
+button {
+    border-top: 1px solid $neutral-background-hover;
+    border-bottom: 1px solid $neutral-border;
+    border-right: 1px solid $neutral-border;
+    border-left: 1px solid $neutral-background-hover;
+    background-image: radial-gradient($neutral-gradient-center 5%, $neutral-background-hover 15%, $neutral-border 60%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(35, 57, 77)), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: $neutral-border 0 1px 0;
+    -moz-box-shadow: $neutral-border 0 1px 0;
+    box-shadow: $neutral-border 0 1px 0;
+    text-shadow: $neutral-border 0 1px 0;
+    color: $neutral-text;
+    font-size: .8rem;
+    vertical-align: middle;
+    margin: 1px;
+    max-height: 2.2rem;
+    min-height: 1.4rem;
+    min-width: 100px;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+    }
+ button:hover {
+    border-top-color: $neutral-background-hover;
+    border-left-color: $neutral-background-hover;
+    background-image: radial-gradient($neutral-gradient-center, $neutral-background-hover, $neutral-border);
+    color: $neutral-text;
+    }
+ button:active {
+    background-image: radial-gradient($neutral-border, $neutral-background-hover, $neutral-gradient-center);
+    }
+
+ button:focus {
+    outline: none;
+ }
+
+ input{
+      width: 60%;
+      padding: 5px 5px;
+      margin: 2px 0;
+      margin-left: 5px;
+      box-sizing: border-box;
+      border-radius: .2rem;
+      font-size: 1rem;
+      border: 3px solid $neutral-background-hover;
+  }
+
+  input:focus {
+   border: 3px solid $neutral-background-hover;
+   outline: none;
+   box-shadow: 0 0 3pt 2pt $neutral-background-hover;
+}

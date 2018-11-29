@@ -1,0 +1,122 @@
+@import '../themes/neutral';
+
+.actionPanel {
+    height: 40vh; /* Full-height: remove this if you want "auto" height */
+    width: 20vw; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 4vh; /* Stay at the top */
+    right: 3vw;
+    // background-color: $neutral-background;
+    // color: $neutral-text;
+    background-color: $neutral-text;
+    background-image: url('../images/move-as-one-logo.png');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 95%;
+    background-size: 100px 40px;
+    color: $neutral-border;
+    text-align: left;
+    border-radius: .4rem;
+    z-index: 3;
+    text-align: center;
+    box-shadow:10px 10px 50px grey;  
+    overflow-y: auto;
+
+    .select-container {
+        background-color: rgba(0,0,0, .80);
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3vh;
+    }
+
+    textarea {
+        height: 10vh;
+        font-size: .8rem;
+        width: 16vw;
+        resize: none;
+        overflow-y: auto;
+        margin-bottom: 5px;
+    }
+    ol {
+        font-size: 1.2rem;
+        text-align: center;
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.actionPanel:hover {
+    box-shadow:12px 12px 75px grey;  
+}
+
+
+
+@media only screen and (max-width: $medium) {
+    .actionPanel {
+        height: 40vh; /* Full-height: remove this if you want "auto" height */
+        width: 40vw; /* Set the width of the sidebar */
+        position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: -40vw;
+        background-color: $neutral-text;
+        // text-align: left;
+        border-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+    .showActionPanel {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        margin-right: 40vw;
+    }
+    .hideActionPanel {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        margin-right: -40vw;
+    }
+
+    .actionPanelButton {
+        visibility: visible;
+        position: absolute;
+        z-index: 4;
+        top: 1vh;
+        right: 3vw;
+    }
+    .moveActionPanelButton {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        top: 1vh;
+        right: 43vw;
+    }
+    .moveActionPanelButtonBack {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        top:1vh;
+        right: 3vw;
+    }
+}
+
+@media only screen and (min-width: $medium) {
+    .actionPanelButton{
+        visibility: hidden;
+    }
+}
+
+.ActionPanel-Main {
+
+}

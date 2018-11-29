@@ -1,0 +1,134 @@
+.chatPanel {
+   height: 40vh; /* Full-height: remove this if you want "auto" height */
+   width: 20vw; /* Set the width of the sidebar */
+   position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   bottom: 4vh; /* Stay at the bottom */
+   right: 3vw;
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: .4rem;
+   background-color: $neutral-text;
+   box-shadow:10px 10px 50px grey;  
+}  
+
+.chatPanel:hover {
+    box-shadow:12px 12px 75px grey;  
+}
+
+.messageInput {
+    bottom: 1vh;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+}
+
+.messageText {
+    width: 100%;
+    padding: 1vh 2vh;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+// .messageSubmit {
+//     background-color: black; 
+//     border: none;
+//     text-align: center;
+//     text-decoration: none;
+//     display: inline-block;
+//     font-size: 16px;
+//     width: 100%;
+//     height: 5vh;
+// }
+
+.messageHistory {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow-y: scroll;
+    max-height: 20vh;
+}
+
+.message {
+    color: black;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.messageGreen {
+    color: rgb(19, 141, 19);
+}
+
+.chatName {
+    font-weight: bold;
+}
+
+.chatHeader {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    // background-color: $neutral-text;
+    color: $neutral-border;
+    // border-top-right-radius: .4rem;
+    // border-top-left-radius: .4rem;
+
+}
+
+.chatPanelButton {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: $medium) {
+    .chatPanel {
+        width: 80vw;
+        right: 10vw;
+        bottom: -44vh;
+    }
+
+    .showChatPanel {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        bottom: 2vh;
+        z-index: 4;
+    }
+    .hideChatPanel {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        bottom: -44vh;
+    }
+
+    .chatPanelButton {
+        visibility: visible;
+        position: absolute;
+        bottom: 2vh;
+        left: 50vw;
+        margin-left: -49px;
+    }
+
+    .moveChatPanelButton{
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        bottom: 44vh;
+    }
+
+    .moveChatPanelButtonBack{
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        bottom: 2vh;
+    }
+}

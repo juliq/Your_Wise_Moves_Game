@@ -1,0 +1,111 @@
+@import '../base/body';
+
+.sidebar {
+    height: 80vh; /* Full-height: remove this if you want "auto" height */
+    width: 20vw; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 3; /* Stay on top */
+    top: 10vh; /* Stay at the top */
+    left: 2vw;
+    background-color: $neutral-text;
+    text-align: center;
+    border-radius: .4rem;
+    box-shadow:10px 10px 50px grey; 
+    overflow-x: hidden; 
+    overflow-y: auto;
+    h3 {
+        color: black;
+        margin-left: .4rem;
+        font-size: 2rem;
+        margin-bottom: 5px;
+    };
+    h3:hover {
+        color: grey;
+        cursor: default;
+    };
+    p {
+        color: black;
+        margin-left: .4rem;
+        font-size: 1.4rem;
+    };
+    p:hover {
+        color: grey;
+        cursor: default;
+    };
+
+    .select-container {
+        background-color: rgba(0,0,0, .80);
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3vh;
+        label {
+            color: white;
+        }
+    }
+    ul {
+        font-size: 1.2rem;
+        text-align: center;
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.sidebar:hover {
+    box-shadow:12px 12px 75px grey;  
+}
+
+.sidebarButton {
+    position: absolute;
+    top: 1vh;
+    left: 2vw;
+    z-index: 1;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: $medium) {
+    .sidebar {
+        margin-left: -74vw;
+        width: 70vw;
+    }
+    .showSidebar {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        margin-left: 0vw;
+    }
+    .hideSidebar {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        margin-left: -74vw;
+    }
+
+    .sidebarButton {
+        visibility: visible;
+    }
+    .moveSidebarButton {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        top: 1vh;
+        left: 10vw;
+    }
+    .moveSidebarButtonBack {
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+        transition: .8s;
+        top: 1vh;
+        left: 2vw;
+    }
+}
+

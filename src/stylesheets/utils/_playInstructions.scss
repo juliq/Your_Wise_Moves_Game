@@ -1,0 +1,38 @@
+.PlayInstructions {
+    font-family: 'Cinzel', serif;
+    h1 {
+        font-size: 1.55em;
+    }
+    &.bottomSquare {
+        font-size: .85em;
+        background-color: rgba(0,0,0, .80);
+        margin: 2vh;
+        text-align: left;
+        color: white;
+        li {
+            padding: 1vh;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        h2 {
+            margin-left: 2vw;
+        }
+    }
+    &.topSquare {
+        background-color: rgba(0,0,0, .80);
+        margin: 2vh;
+        text-align: left;
+        color: white;
+
+        p {
+            font-size: .85em;
+            color: white;
+        }
+    }
+  
+}
+
+

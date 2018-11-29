@@ -1,0 +1,60 @@
+.nav-title {
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+    color: #f2f2f2;
+    padding-left: 10px;
+}
+
+.nav {
+  overflow: hidden;
+  height: 7vh;
+  width: 100vw;
+  // background-image: url("../images/yourwisemovesbanner.jpg");
+  background: rgb(27, 27, 27);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+
+  button {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  button:hover {
+    background: none;
+  }
+
+  h2 {
+    text-align: center;
+    padding-left: 0;
+    float: left;
+    margin-left: 4vw;
+    margin-top: 1vh;
+  }
+}
+
+.nav-link {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 10px;
+  text-decoration: none;
+  font-size: 15px;
+
+  /* these last two make the logout button in
+  the nav bar look like another link */
+  border:none;
+  cursor: pointer;
+  outline:0;
+}
+
+.nav-link:hover {
+}
+
+.nav-right {
+  float: right;
+}

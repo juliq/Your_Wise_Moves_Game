@@ -1,0 +1,40 @@
+@import '../themes/neutral';
+
+$font-stack: Helvetica, sans-serif;
+
+$primary-color: black;
+
+//Screen Sizes
+$small: 500px;
+$medium: 1100px;
+$large: 1400px;
+
+#react-root {
+  height: 100vh; 
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    // background: rgb(100, 105, 129);
+    // background-image: radial-gradient(rgb(234, 238, 211),rgb(199, 196, 177), rgb(182, 179, 164));
+    // background-image: radial-gradient(rgb(217, 239, 243),rgb(188, 206, 209), rgb(153, 166, 168));
+    background-image: radial-gradient(rgb(245, 254, 255),rgb(182, 235, 240), rgb(113, 162, 167));
+    height: 100vh;
+    min-height: 900px;
+    font-size: 14px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+  
+
+.overflowHidden {
+  overflow-x: hidden;
+  width: 100vw;
+  z-index: -2;
+}
